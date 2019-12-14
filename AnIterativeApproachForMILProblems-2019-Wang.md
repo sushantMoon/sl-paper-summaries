@@ -1,16 +1,16 @@
 # An Iterative Approach for Multiple Instance Learning Problem
 
-    <b>Authors : Kaili Wang, Jose Oramas, Tinne Tuytelaars</b>
+<b>Authors : Kaili Wang, Jose Oramas, Tinne Tuytelaars</b>
 
-    Written are the points which felt important.
+Written are the points which felt important.
 
 ## Abstract
 
-    The sugessested method iteratively looks into and analyzes set elements enabling the proposed model to update the set representation so that it reflects whether relevant elements have been detected and whether the underlying structure has been matched.
+The sugessested method iteratively looks into and analyzes set elements enabling the proposed model to update the set representation so that it reflects whether relevant elements have been detected and whether the underlying structure has been matched.
 
 ## Introduction
 
-    Most common and standard assumption for MIL problems, states that a set is positive if it contains at least one positive (generally refered as witness) element otherwise negative.
+Most common and standard assumption for MIL problems, states that a set is positive if it contains at least one positive (generally refered as witness) element otherwise negative.
 
 Challenges faced by MIL,
 
