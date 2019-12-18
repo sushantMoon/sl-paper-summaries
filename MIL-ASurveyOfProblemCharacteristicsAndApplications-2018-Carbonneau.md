@@ -62,4 +62,16 @@ g(X) = \begin{cases}
 \end{cases}
 ```
 
-****
+**Collective Assumtion**
+
+A more general case of collective assumptiom is when the bag is defined positive based on instances belonging to more than one concept. One case can be a mthod which assigns instances to a set of defined concepts $`(C)`$, and some of these concepts belong to positive class $`(C^{+} \subset C)`$, then the bag classifier is defined as,
+
+```math
+g(X) = \begin{cases}
+    1 &\text{if } \forall c \in C^{+} : \theta_{c} \le \sum_{x \in X} f_c(x) \\
+    0 &\text{otherwise}
+\end{cases}
+```
+where $`f_c(x)`$ is a process that outputs 1 if $`x`$ belongs to concept $`c`$ and $`\theta_c`$ is the number of instances belonging to $`c`$ required to observe a positive bag.
+
+In this paper, the *collective assumption* designates all the assumptions in which more than one instance is needed to identify a positive bag.
