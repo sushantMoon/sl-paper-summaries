@@ -46,8 +46,18 @@ Let $`X`$ be the bag defined as a set of features vectors, or instances, then $`
 
 ```math
 g(X) = \begin{cases}
-1 &\text{if } \exists x \in X : f(X) = 1 \\
-0 &\text{otherwise}
+    1 if \exists x \in X : f(X) = 1 \\
+    0 otherwise
 \end{cases}
 ```
 
+The standard assumption can be relaxed to address problems where positive bag cannot be identified by a single positive instance but by a distribution, interaction or accumulation of the instances it contains.
+
+One variant would be, there needs to be certain minimum number of positive instances for a bag to be classified as positive.
+
+$$
+g(X) = \begin{cases}
+    1 if \theta \le \sum_{x \in X} f(X) \\
+    0 otherwise
+\end{cases}
+$$
