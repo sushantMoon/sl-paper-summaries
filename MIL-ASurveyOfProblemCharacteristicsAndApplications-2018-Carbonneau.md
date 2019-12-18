@@ -40,4 +40,4 @@ Two broad categories for the assumptions are, standard and collective.
 
 Now standard assumption states that all the negative bags contain only negative instances and positive bag contains atleast one positive instance, also called witness.
 
-Let X be the bag defined as a set of features vectors, or instances, then ```math X = {x\_1, x\_2, ... , x\_N}```. Each instance ```math x\_i``` in feature space ```math \upchi``` can be mapped to a class by some process,or function, ```math f : \upchi \rightarrow {0,1}```, where the negative and positive classes correspond to 0 or 1 respectively.
+Let X be the bag defined as a set of features vectors, or instances, then $`X = {x\_1, x\_2, ... , x\_N}`$. Each instance $`x\_i`$` in feature space $`\upchi`$` can be mapped to a class by some process,or function, $`f : \upchi \rightarrow {0,1}`$`, where the negative and positive classes correspond to 0 or 1 respectively.
