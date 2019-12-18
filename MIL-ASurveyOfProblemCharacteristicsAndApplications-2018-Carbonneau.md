@@ -55,9 +55,9 @@ The standard assumption can be relaxed to address problems where positive bag ca
 
 One variant would be, there needs to be certain minimum number of positive instances for a bag to be classified as positive.
 
-$$
+```math
 g(X) = \begin{cases}
     1 if \theta \le \sum_{x \in X} f(X) \\
     0 otherwise
 \end{cases}
-$$
+```
