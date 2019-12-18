@@ -21,7 +21,7 @@ Methods specialized to address each of the category are reviewed.
 
 Then the extend to which these characteristics manifest themselves in key MIL application areas are described.
 
-## Introduction
+## 1. Introduction
 
 A limited understanding of such fundamental problem (MIL, weakly labeled dataset) characteristics affects the advancement of MIL research in many ways. Experimental results can be difficult to interpret, proposed algorithms are evaluated on inappropriate benchmark datasets and results on synthetic data often do not generalize to real world data.
 
@@ -32,5 +32,12 @@ This paper provides a comprehensive survey of the characteristics inherent to MI
 3. Label Ambiquity : This ambiquity can be related to label noise as well as to instances not belonging to clearly defined classes. `(A review of multiple instance learning assumptions. J. Flouds, 2010)`
 4. Data Distribution : The shape of positive and negative distribution affect MIL algorithms depending on their assumptions about the data.
 
+## 2. Multiple Instance Learning
 
+### 2.1. Assumptions
 
+Two broad categories for the assumptions are, standard and collective.
+
+Now standard assumption states that all the negative bags contain only negative instances and positive bag contains atleast one positive instance, also called witness.
+
+Let X be the bag defined as a set of features vectors, or instances, then ```math X = {x\_1, x\_2, ... , x\_N}```. Each instance ```math x\_i``` in feature space ```math \upchi``` can be mapped to a class by some process,or function, ```math f : \upchi \rightarrow {0,1}```, where the negative and positive classes correspond to 0 or 1 respectively.
