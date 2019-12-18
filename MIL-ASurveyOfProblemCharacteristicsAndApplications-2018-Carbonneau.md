@@ -38,6 +38,16 @@ This paper provides a comprehensive survey of the characteristics inherent to MI
 
 Two broad categories for the assumptions are, standard and collective.
 
-Now standard assumption states that all the negative bags contain only negative instances and positive bag contains atleast one positive instance, also called witness.
+<b> Standard Assumptions and Variants : </b>
 
-Let $`X`$ be the bag defined as a set of features vectors, or instances, then $`X = \{x\_1, x\_2, ... , x\_N\}`$. Each instance $`x\_i`$ in feature space $`\Psi`$ can be mapped to a class by some process,or function, $`f : \Psi \rightarrow {0,1}`$, where the negative and positive classes correspond to 0 or 1 respectively.
+Standard assumption states that all the negative bags contain only negative instances and positive bag contains atleast one positive instance, also called witness.
+
+Let $`X`$ be the bag defined as a set of features vectors, or instances, then $`X = \{x\_1, x\_2, ... , x\_N\}`$. Each instance $`x\_i`$ in feature space $`\Psi`$ can be mapped to a class by some process,or function, $`f : \Psi \rightarrow {0,1}`$, where the negative and positive classes correspond to 0 or 1 respectively. So the bag classifier $`g(X)`$ is defined as,
+
+```math
+g(X) = \begin{cases}
+1 &\text{if } \exists x \in X : f(X) = 1
+0 &\text{otherwise}
+\end{cases}
+```
+
