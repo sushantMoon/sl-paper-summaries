@@ -46,7 +46,7 @@ Let $`X`$ be the bag defined as a set of features vectors, or instances, then $`
 
 ```math
 g(X) = \begin{cases}
-1 &\text{if } \exists x \in X : f(X) = 1
+1 &\text{if } \exists x \in X : f(X) = 1 \\
 0 &\text{otherwise}
 \end{cases}
 ```
