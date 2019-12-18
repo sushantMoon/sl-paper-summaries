@@ -27,8 +27,10 @@ A limited understanding of such fundamental problem (MIL, weakly labeled dataset
 
 This paper provides a comprehensive survey of the characteristics inherent to MIL problems, and investigates their impact on the performance of MIL algorithms. These problem characteristics are all related to unique features of MIL, namely the ambiquity of the instance labels and the grouping of data in bags. We propose to organize problem characteristics in four broad categotries:
 
-1. Prediction level : As the instances are grouped in bags predictions can be performed at two levels, instance-level or bag-level
-2. Bag Composition
-3. Label Ambiquity
-4. Data Distribution
+1. Prediction level : As the instances are grouped in bags predictions can be performed at two levels, instance-level or bag-level. `(On classification with bag, groups and sets. V. Cheplygina 2015)`
+2. Bag Composition : Proportion of instances from each class and the relation between the instances affects the MIL methods.
+3. Label Ambiquity : This ambiquity can be related to label noise as well as to instances not belonging to clearly defined classes. `(A review of multiple instance learning assumptions. J. Flouds, 2010)`
+4. Data Distribution : The shape of positive and negative distribution affect MIL algorithms depending on their assumptions about the data.
+
+
 
