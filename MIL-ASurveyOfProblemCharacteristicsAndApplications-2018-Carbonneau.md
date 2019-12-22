@@ -36,9 +36,9 @@ This paper provides a comprehensive survey of the characteristics inherent to MI
 
 ### 2.1. Assumptions
 
-Two broad categories for the assumptions are, standard and collective.
+Two broad categories for the assumptions are, standard and collective.`(A review of multiple instance learning assumptions. J. Flouds, 2010)`
 
-**Standard Assumptions and Variants :**
+**Standard Assumptions and Variants**
 
 Standard assumption states that all the negative bags contain only negative instances and positive bag contains atleast one positive instance, also called witness.
 
@@ -50,6 +50,7 @@ g(X) = \begin{cases}
     0 &\text{otherwise}
 \end{cases}
 ```
+This was working assupmtion for `Solving the multiple instance problem with axis-parallel rectangles. T.G. Dietterich, 1997`, `Support Vector Machines for multiple-instance learning. S. Andrews, 2002`, `A framework for multiple-instance learning. O.Maron, 1998`, `Robust multiple instance learning ensembles using random subspace instance selection. M.A. Carbonneau, 2016`, `A sphere description based approach for multiple instance learning. Y.Xiao, 2017`
 
 The standard assumption can be relaxed to address problems where positive bag cannot be identified by a single positive instance but by a distribution, interaction or accumulation of the instances it contains.
 
@@ -62,7 +63,9 @@ g(X) = \begin{cases}
 \end{cases}
 ```
 
-**Collective Assumtion**
+`(A review of multiple instance learning assumptions. J. Flouds, 2010)` gave an example for the above variant.
+
+**Collective Assumption**
 
 A more general case of collective assumptiom is when the bag is defined positive based on instances belonging to more than one concept. One case can be a mthod which assigns instances to a set of defined concepts $`(C)`$, and some of these concepts belong to positive class $`(C^{+} \subset C)`$, then the bag classifier is defined as,
 
@@ -75,3 +78,13 @@ g(X) = \begin{cases}
 where $`f_c(x)`$ is a process that outputs 1 if $`x`$ belongs to concept $`c`$ and $`\theta_c`$ is the number of instances belonging to $`c`$ required to observe a positive bag.
 
 In this paper, the *collective assumption* designates all the assumptions in which more than one instance is needed to identify a positive bag.
+
+### 2.2. Tasks
+
+1. **Classification** : It can be done at two levels, bag and instance. Loss functions for both would be very different and performance of one method on bag classificaion is not representative for instance classification.
+2. **Regression** : It consists of assigning a real value to a bag (based on single instance or collective assumption or weighted average of multiple instances) or instance (based on which instance is the best fit or closest to the target concept)
+3. **Ranking** : The goal is not to obtain real valued label, but to compare tha magnitude of scores to perform sorting. It can be done on bag level or instance level.
+4. **Clustering** : This task consists in finding clusters or structure among the set of unlabeled bags or even among the instances within each bag.
+
+## 3. Studies on MIL
+
