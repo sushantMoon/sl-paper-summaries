@@ -88,7 +88,18 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 
 ## 3. Studies on MIL
 
-* ![13][13] was the first survey and it discussed learnability under MIL framework.
+* [13] was the first survey and it discussed MIL algorithms, some applications and learnability under MIL framework.
+* [14] has updated the survey of the main families of MIL methods and distinguished two types of ambiquity in MIL problems.
+  * The first type is polymorphism ambiquity, in which each instance is a distinct entity or a distinct version of the same entity (eg. conformations of a molecule).
+  * The second is the part-whole ambiquity in which all the instances are parts of the same object (eg. segments of the image)
+* [15] proposed taxonomy in which MIL methods can are divided in three broad categories following the representation space.
+  * Methods operating in instance-space.
+  * Methods operating in bag-space, this category is further divided into two parts based on whether is bag embedding is performed or not. Bag-space methods perform better in terms of bag classification accuracy, however performance depends on the data and distance function or embedding method used.
+* [50] discusses the tasks discussed in pervious section along with associated methods as well as data reduction and imbalanced data.
+* [51] provided survey on MIL for medical imaging applications, it reviewed how problems are formulated and analyze results from various experiments. It was concluded that MIL outperforms single instance learning because it can pick up on subtle global visual clues that cannot be properly segmented and used as single instances to train a classifier.
+* [17] reviewed the assumptions, it stated that these assumptions influence how algorithms performon different types of data sets. They found that algorithms working under the collective assumption also perform well with data sets corresponding to the standard MIL assumption.
+* [52] analyzed the sample complexity in MIL and found that statistical performance of MIL is only mildly dependent on the number of instances per bag.
+* [23] studied the similarities between MIL benchmark datasets. They were representated in two ways: first by meta-features describing number of bags, instances and so forth; second by features based on performances of MIL algorithms. Both representations were embedded in a 2D space and found to be dissimilar to each other. In other words datasets often considered similar due to application or size of data did not behave similarly, which suggests that some unobserved properties influence MIL algorithms' performance.
 *
 
 
@@ -100,4 +111,12 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 
 ## References
 
-[13]: "Z.-h. Zhou, “Multi-Instance Learning : A Survey,” AI Lab, Department of Computer Scienceand Technology, Nanjing University, Tech. Rep., 2004."
+* [13] Z.-h.Zhou,Multi-InstanceLearning:ASurvey,TechnicalReport,2004.
+* [14] B.Babenko,MultipleInstanceLearning:AlgorithmsandApplications,Techni-calReport,SanDiego,USA,2008.
+* [15] J.Amores,Multipleinstanceclassification:review,taxonomyandcomparativestudy,Artif.Intell.201(2013)81–105.
+* [17] J.Foulds,E.Frank,Areviewofmulti-instancelearningassumptions,Knowl.Eng.Rev.25(1)(2010)1–25.
+* [18] S.Ray,M.Craven,Supervisedversusmultipleinstancelearning:anempiricalcomparison,in:ProceedingsofInternationalConferenceonMachineLearn-ing,ICML,2005.
+* [50] F.Herrera,S.Ventura,R.Bello,C.Cornelis,A.Zafra,D.Sánchez-Tar-ragó,S.Vluymans,MultipleInstanceLearning:FoundationandAlgorithms,Springer,2016.
+* [51] G.Quellec,G.Cazuguel,B.Cochener,M.Lamard,Multiple-instancelearningformedicalimageandvideoanalysis,IEEERev.Biomed.Eng.PP(99)(2017)1–1,doi:10.1109/RBME.2017.2651164.
+* [23] V.Cheplygina,D.M.J.Tax,Characterizingmultipleinstancedatasets,in:Pro-ceedingsofInternationalWorkshoponSimilarity-BasedPatternRecognition,SIMBAD,2015.
+
