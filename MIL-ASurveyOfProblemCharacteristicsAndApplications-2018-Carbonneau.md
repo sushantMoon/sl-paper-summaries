@@ -88,3 +88,16 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 
 ## 3. Studies on MIL
 
+* ![13][13] was the first survey and it discussed learnability under MIL framework.
+*
+
+
+
+
+
+
+
+
+## References
+
+[13]: "Z.-h. Zhou, “Multi-Instance Learning : A Survey,” AI Lab, Department of Computer Scienceand Technology, Nanjing University, Tech. Rep., 2004."
