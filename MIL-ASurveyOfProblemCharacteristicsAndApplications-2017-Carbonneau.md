@@ -27,16 +27,16 @@ A limited understanding of such fundamental problem (MIL, weakly labeled dataset
 
 This paper provides a comprehensive survey of the characteristics inherent to MIL problems, and investigates their impact on the performance of MIL algorithms. These problem characteristics are all related to unique features of MIL, namely the ambiquity of the instance labels and the grouping of data in bags. We propose to organize problem characteristics in four broad categotries:
 
-1. Prediction level : As the instances are grouped in bags predictions can be performed at two levels, instance-level or bag-level. `(On classification with bag, groups and sets. V. Cheplygina 2015)`
+1. Prediction level : As the instances are grouped in bags predictions can be performed at two levels, instance-level or bag-level.
 2. Bag Composition : Proportion of instances from each class and the relation between the instances affects the MIL methods.
-3. Label Ambiquity : This ambiquity can be related to label noise as well as to instances not belonging to clearly defined classes. `(A review of multiple instance learning assumptions. J. Flouds, 2010)`
+3. Label Ambiquity : This ambiquity can be related to label noise as well as to instances not belonging to clearly defined classes.
 4. Data Distribution : The shape of positive and negative distribution affect MIL algorithms depending on their assumptions about the data.
 
 ## 2. Multiple Instance Learning
 
 ### 2.1. Assumptions
 
-Two broad categories for the assumptions are, standard and collective.`(A review of multiple instance learning assumptions. J. Flouds, 2010)`
+Two broad categories for the assumptions are, standard and collective [17].
 
 **Standard Assumptions and Variants**
 
@@ -50,7 +50,7 @@ g(X) = \begin{cases}
     0 &\text{otherwise}
 \end{cases}
 ```
-This was working assupmtion for `Solving the multiple instance problem with axis-parallel rectangles. T.G. Dietterich, 1997`, `Support Vector Machines for multiple-instance learning. S. Andrews, 2002`, `A framework for multiple-instance learning. O.Maron, 1998`, `Robust multiple instance learning ensembles using random subspace instance selection. M.A. Carbonneau, 2016`, `A sphere description based approach for multiple instance learning. Y.Xiao, 2017`
+This was working assupmtion for [3], [6], [29], [30], [31]
 
 The standard assumption can be relaxed to address problems where positive bag cannot be identified by a single positive instance but by a distribution, interaction or accumulation of the instances it contains.
 
@@ -63,7 +63,7 @@ g(X) = \begin{cases}
 \end{cases}
 ```
 
-`(A review of multiple instance learning assumptions. J. Flouds, 2010)` gave an example for the above variant.
+[17] gave an example for the above variant.
 
 **Collective Assumption**
 
@@ -118,6 +118,8 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 
 ## References
 
+* [3] T.G.Dietterich, R.H.Lathrop, T.Lozano-Pérez, Solving the multiple instance problem with axis parallel rectangles, Artif.Intell.89(1–2)(1997)31–71.
+* [6] S.Andrews, I.Tsochantaridis, T.Hofmann, Support vector machines for multiple instance learning, in: Proceedings of Conference on Neural Information Processing Systems, NIPS, 2002
 * [13] Z.-h.Zhou, Multi-Instance Learning: A Survey, Technical Report,2004.
 * [14] B.Babenko, Multiple Instance Learning: Algorithms and Applications, Technical Report, SanDiego, USA, 2008.
 * [15] J.Amores, Multiple instance classification: review, taxonomy and comparative study, Artif.Intell.201(2013)81–105.
@@ -129,6 +131,9 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 * [21] E.Alpaydin, V.Cheplygina, M.Loog, D.M.Tax, Single vs. multiple-instance classification, Pattern Recognit.48(9)(2015)2831–2838.
 * [22] V.Cheplygina, L.Sørensen, D.M.J.Tax, M.Bruijne, M.Loog, Label stability in multiple instance learning, in:Proceedings of International Conference on Medical Image Computing and Computer-Assisted Intervention, MICCAI, 2015.
 * [23] V.Cheplygina, D.M.J.Tax, Characterizing multiple instance datasets, in:Proceedings of International Workshop on Similarity-Based Pattern Recognition, SIMBAD, 2015.
+* [29] O.Maron, T.Lozano-Pérez, A framework for multiple-instance learning, in: Proceedings of Conference on Neural Information Processing Systems, NIPS, 1998.
+* [30] M.-A.Carbonneau, E.Granger, A.J.Raymond, G.Gagnon, Robust multiple-instance learning ensembles using random subspace instance selection, Pattern Recognit.58(2016)83–99.
+* [31] Y.Xiao, B.Liu, Z.Hao, A sphere-description based approach for multiple-instance learning, IEEE Trans.Pattern Anal.Mach.Intell.39(2)(2017)242–257, doi:10.1109/TPAMI.2016.2539952.
 * [50] F.Herrera,S.Ventura,R.Bello,C.Cornelis,A.Zafra,D.Sánchez-Tar-ragó,S.Vluymans,MultipleInstanceLearning:FoundationandAlgorithms,Springer,2016.
 * [51] G.Quellec,G.Cazuguel,B.Cochener,M.Lamard,Multiple-instancelearningformedicalimageandvideoanalysis,IEEERev.Biomed.Eng.PP(99)(2017)1–1,doi:10.1109/RBME.2017.2651164.
 * [52] S.Sabato, N.Tishby, Multi-instance learning with any hypothesis class, J.Mach.Learn.Res.13(1)(2012)2999–3039.
