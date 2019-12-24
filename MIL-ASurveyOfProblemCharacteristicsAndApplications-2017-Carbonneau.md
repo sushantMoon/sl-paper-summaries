@@ -131,7 +131,6 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 * [23] V.Cheplygina, D.M.J.Tax, Characterizing multiple instance datasets, in:Proceedings of International Workshop on Similarity-Based Pattern Recognition, SIMBAD, 2015.
 * [50] F.Herrera,S.Ventura,R.Bello,C.Cornelis,A.Zafra,D.Sánchez-Tar-ragó,S.Vluymans,MultipleInstanceLearning:FoundationandAlgorithms,Springer,2016.
 * [51] G.Quellec,G.Cazuguel,B.Cochener,M.Lamard,Multiple-instancelearningformedicalimageandvideoanalysis,IEEERev.Biomed.Eng.PP(99)(2017)1–1,doi:10.1109/RBME.2017.2651164.
-
 * [52] S.Sabato, N.Tishby, Multi-instance learning with any hypothesis class, J.Mach.Learn.Res.13(1)(2012)2999–3039.
 * [53] M.-A.Carbonneau, E.Granger, G.Gagnon, Witness identification in multiple instance learning using random subspaces, in:Proceedings of International Conference on Pattern Recognition, ICPR, 2016.
 * [54] X.S.Wei, Z.H.Zhou, An empirical study on image bag generators for multi-instance learning, Mach.Learn.105(2)(2016)155–198, doi:10.1007/s10994-016-5560-1.
