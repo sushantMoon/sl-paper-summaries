@@ -140,4 +140,4 @@ In this paper, the *collective assumption* designates all the assumptions in whi
 * [53] M.-A.Carbonneau, E.Granger, G.Gagnon, Witness identification in multiple instance learning using random subspaces, in:Proceedings of International Conference on Pattern Recognition, ICPR, 2016.
 * [54] X.S.Wei, Z.H.Zhou, An empirical study on image bag generators for multi-instance learning, Mach.Learn.105(2)(2016)155–198, doi:10.1007/s10994-016-5560-1.
 * [57] R.Venkatesan, P.Chandakkar, B.Li, Simpler non-parametric methods provide as good or better results to multiple-instance learning, in:Proceedings of International Conference on Computer Vision, ICCV, 2015.
-* [58] M.Kandemir, F.A.Hamprecht, Computeraided diagnosis from weak supervision: a benchmarking study., Comput.Med.Imaging Graph.42(2015)44–50
+* [58] M.Kandemir, F.A.Hamprecht, Computer aided diagnosis from weak supervision: a benchmarking study., Comput.Med.Imaging Graph.42(2015)44–50
